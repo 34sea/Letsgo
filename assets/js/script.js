@@ -22,13 +22,14 @@ let comuQuetion = document.querySelectorAll(".comuQuetion")
 for(let j=0; j<faqComun.length; j++){
     faqComun[j].addEventListener("click", ()=>{
         for(let c=0; c<faqComun.length; c++){
-            console.log(c)
+
             if(faqComun[c].classList.contains("minimizeCampo") && c!=j){
                 faqComun[c].classList.add("maxmizeCampo")
                 faqComun[c].classList.remove("minimizeCampo")
                 comuQuetion[c].classList.add("pergunta")
                 comuQuetion[c].classList.remove("aberta")
                 faqComun[c].textContent = "+"
+
                 document.querySelectorAll(".comuQuetion")[c].style.height = "30px"
                 //alert("minimizar")
     
@@ -40,6 +41,8 @@ for(let j=0; j<faqComun.length; j++){
             comuQuetion[j].classList.add("pergunta")
             comuQuetion[j].classList.remove("aberta")
             faqComun[j].textContent = "+"
+
+
             document.querySelectorAll(".comuQuetion")[j].style.height = "30px"
             //alert("minimizar")
 
@@ -55,4 +58,113 @@ for(let j=0; j<faqComun.length; j++){
     })
 }
 
-//alert("ya")
+let infoEmpreendi = document.querySelector(".infoEmpreendi")
+let tmp1
+let tmp2
+let tmp3
+let tmp4
+let tempo = 25
+let cima = false
+let carregouContagem = false
+infoEmpreendi.addEventListener("mouseover", ()=>{
+    if(!carregouContagem){
+        clearInterval(tmp1)
+        tmp1 = setInterval(contagemN, tempo)
+        clearInterval(tmp2)
+        tmp2 = setInterval(contagemN2, tempo)
+        clearInterval(tmp3)
+        tmp3 = setInterval(contagemN3, tempo)
+        clearInterval(tmp4)
+        tmp4 = setInterval(contagemN4, tempo)
+        cima=true
+        carregouContagem=true
+    }
+    
+})
+
+infoEmpreendi.addEventListener("mouseout", ()=>{
+
+    cima=false
+    
+})
+
+let lotes = [490, 10, 50, 5000]
+
+let contagem = document.querySelectorAll(".contagem")
+
+
+
+
+let lote1 = 0
+
+function contagemN(){
+    if(lote1 != lotes[0]){
+
+        lote1+=10
+        contagem[0].textContent = lote1
+        
+    }else{
+        lote1 = 0
+        clearInterval(tmp1)
+    }
+}
+
+let lote2 = 0
+
+function contagemN2(){
+    if(lote2 != lotes[1]){
+
+        lote2++
+        contagem[1].textContent = lote2
+        
+    }else{
+        lote2 = 0
+        clearInterval(tmp2)
+    }
+}
+
+let lote3 = 0
+
+function contagemN3(){
+    if(lote3 != lotes[2]){
+
+        lote3++
+        contagem[2].textContent = lote3
+        
+    }else{
+        lote3 = 0
+        clearInterval(tmp3)
+    }
+}
+
+let lote4 = 0
+
+function contagemN4(){
+    if(lote4 != lotes[3]){
+
+        lote4+=100
+        contagem[3].textContent = lote4
+        
+    }else{
+        lote4 = 0
+        clearInterval(tmp4)
+    }
+}
+
+
+document.addEventListener("scroll", ()=>{
+    let coordenadas = document.getElementById("infoEmpreendi").getBoundingClientRect();
+    if((coordenadas.top) <= 24 && coordenadas.top >= -435 && cima==false && !carregouContagem){
+        clearInterval(tmp1)
+        tmp1 = setInterval(contagemN, tempo)
+        clearInterval(tmp2)
+        tmp2 = setInterval(contagemN2, tempo)
+        clearInterval(tmp3)
+        tmp3 = setInterval(contagemN3, tempo)
+        clearInterval(tmp4)
+        tmp4 = setInterval(contagemN4, tempo)
+        carregouContagem=true
+
+    }
+})
+
