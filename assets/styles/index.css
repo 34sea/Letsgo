@@ -781,10 +781,12 @@ section{
 .comuQuetion{
     margin-top: 20px;
     height: 30px;
+    overflow: hidden;
 }
 
 .comuQuetion:first-child{
     height: 200px;
+    overflow: hidden;
 }
 
 .contatos{
@@ -1003,4 +1005,8 @@ footer ul li a{
     color: #fff;
     text-align: center;
     opacity: 85%;
+}
+
+.contagem{
+    transition: all .3s ease;
 }
