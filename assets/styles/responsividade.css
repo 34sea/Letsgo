@@ -1,0 +1,542 @@
+@media (max-width: 1266px){
+    .textoPublicitario{
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+}
+
+@media (max-width: 1064px){
+    .banner{
+        height: 400px;
+    }
+    .textoPublicitario p{
+        display: none;
+    }
+}
+
+
+@media (max-width: 902px){
+    .textoPublicitario h2{
+        font-size: 2rem;
+    }
+    .espcificacoes{
+        position: absolute;
+        bottom: 10px;
+        right: 20px;
+    }
+    header{
+        padding: 0px 20px!important;
+        border: 0px solid white;
+        width: calc(100% - 40px);
+    }
+    header nav{
+        border: 0px solid white;
+    }
+
+    .textoPublicitario{
+        width: 400px;
+    }
+
+    .banner{
+        padding: 0px 20px!important;
+    }
+}
+
+@media (max-width: 712px){
+
+    .textoPublicitario h2{
+        font-size: 1.8rem;
+    }
+
+    .textoPublicitario{
+        width: 300px;
+    }
+
+    .banner{
+        height: 300px;
+    }
+
+}
+
+@media (max-width: 540px){
+    .espcificacoes span{
+        display: none;
+    }
+    .espcificacoes{
+        height: 20px;
+    }
+
+    .whatsappBtn{            
+        padding: 7px 10px;
+    }
+
+    .whatsappBtn img{
+        width: 15px;
+    }
+    .whatsappBtn span{
+        font-size: 14px;
+    }
+    .banner{
+        height: 270px;
+    }
+
+    .textoPublicitario a{
+        text-decoration: none;
+        background-color: #cd1818;
+        padding: 5px 5px;
+        width: 100px;
+        height: 20px;
+        font-size: 14px;
+        border-radius: 5px;
+    }
+}
+
+@media (max-width: 504px){
+    
+    .textoPublicitario h2{
+        font-size: 1.2rem;
+    }
+
+    .textoPublicitario{
+        width: 200px;
+    }
+    .banner{
+        height: 240px;
+    }
+}
+
+@media (max-width: 486px){
+
+    .banner{
+        align-items: flex-end;
+        padding-bottom: 40px!important;
+        height: calc( 230px - 40px);
+    }
+
+
+}
+
+@media (max-width: 438px){
+    .whatsappBtn span{
+        display: none;
+    }
+}
+
+@media (max-width: 410px){
+
+    .banner{
+        background-size: cover;
+        height: calc( 200px - 0px);
+        padding-bottom: 20px!important;
+    }
+
+    .textoPublicitario{
+        width: 150px;
+    }
+
+    .textoPublicitario h2{
+        font-size: 1rem;
+    }
+
+
+}
+
+@media (max-width: 360px){
+    header ul{
+        gap: 10px!important;
+    }
+}
+
+@media (max-width: 324px){
+    header ul li a{
+        font-size: 14px!important;
+    }
+}
+
+@media (max-width: 306px){
+    header ul li a{
+        font-size: 12px!important;
+    }
+
+    .whatsappBtn{
+        padding: 5px 7px;
+    }
+
+    .whatsappBtn img{
+        width: 12px;
+    }
+}
+
+/*-------------------------------------------------------------------*/
+
+@media (max-width: 1170px){
+    .tituloSobreNos h2 {
+        font-size: 2.2rem;
+    }
+    .textoSobreNos p{
+        margin-top: 35px;
+        font-size: 1.1rem;
+    }
+
+    .bgRedCard{
+        width: 200px!important;
+    }
+}
+
+@media (max-width: 1054px){
+    .sobreNos img{
+        width: 250px;
+    }
+}
+
+@media (max-width: 900px){
+    .sobreNos{
+        flex-direction: column-reverse;
+    }
+    .sobreNos img{
+        width: 100%;
+    }
+
+    .textoSobreNos{
+        padding: 0px 0px;
+        margin-bottom: 40px;
+    }
+    .textoSobreNos p{
+        margin-top: 10px;
+        text-align: center;
+        font-size: 1.2rem;
+    }
+    .bgRedCard{
+        display: none;
+    }
+    .textoSobreNos h2{
+        text-align: center;
+        width: 100%;
+    }
+    .sobreEmpresa{
+        padding: 40px 20px;
+    }
+}
+
+@media (max-width: 452px){
+    .textoSobreNos p{
+        margin-top: 10px;
+        text-align: center;
+        font-size: 1rem;
+    }
+
+    .textoSobreNos h2{
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 1246px){
+    .descricaoDepartamnetoEmpresa{
+        gap: 20px;
+    }
+}
+
+@media (max-width: 1108px){
+    .descricaoDepartamnetoEmpresa{
+        flex-direction: column;
+    }
+    .infoEmpresa{
+        width: calc(100% - 50px);
+    }
+}
+
+/*----------------------------------------------------------*/
+
+@media (max-width: 1052px){
+    .cardsContracts{
+        gap: 20px;
+    }
+}
+
+@media (max-width: 1052px){
+    .cardsContracts{
+        flex-direction: column;
+        padding: 0px 20px;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .cardsContract{
+        width: 70%;
+        height: 650px;
+    }
+
+    .headerContract{
+        width: 96%;
+    }
+}
+
+@media (max-width: 668px){
+
+    .cardsContract{
+        width: 96%;
+        height: 650px;
+    }
+
+    .headerContract{
+        width: 96%;
+    }
+}
+
+@media (max-width: 478px){
+
+    .cardsContract{
+        width: 96%;
+        height: 1050px!important;
+    }
+
+    .headerContract{
+        width: 96%;
+    }
+
+    .contratacao{
+        height: 1200px;
+    }
+
+    .traco{
+        display: none;
+    }
+}
+
+@media (max-width: 478px){
+    .saberMaisCard span{
+        display: none;
+    }
+}
+
+@media (max-width: 354px){
+    .cardsContract{
+        width: 100%;
+    }
+    .headerContract h2{
+        font-size: 1rem;
+    }
+    .cardsContract ul li span{
+        font-size: 14px;
+    }
+
+    .cardsContract ul li h3{
+        font-size: 1rem;
+        width: 80px;
+    }
+}
+
+@media (max-width: 876px){
+    .contractBg{
+        display: none;
+    }
+
+    .contract h2{
+        text-align: center;
+        width: 100%;
+    }
+
+    .contratacao p{
+        text-align: center;
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 642px){
+    .contratacao p{
+        padding: 0px 20px;
+    }
+}
+
+
+/*---------------------------------------------------------------------*/
+
+@media (max-width: 1012px){
+    .textoInfoEmpreendi{
+        width: 400px;
+    }
+
+    .textoInfoEmpreendi h2{
+        width: 100%;
+        font-size: 2rem;
+    }
+    .textoInfoEmpreendi p{
+        font-size: 1rem;
+    }
+    .infosEstat{
+        width: 300px;
+    }
+}
+
+@media (max-width: 812px){
+    .infoEmpreendi{
+        flex-direction: column;
+        min-height: 500px;
+        justify-content: center;
+        gap: 20px;
+        padding: 0px 20px;
+    }
+
+    .textoInfoEmpreendi{
+        width: 100%;
+    }
+
+    .infosEstat{
+        width: 100%;
+
+        gap: 30px;
+    }
+
+    .infosLot{
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+        width: 300px;
+    }
+
+    .infosLot span{
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 712px){
+    .textoInfoEmpreendi h2{
+        width: 100%;
+        font-size: 1.5rem;
+        text-align: center;
+        line-height: 30px;
+    }
+
+    .textoInfoEmpreendi p{
+        text-align: center;
+    }
+}
+
+@media (max-width: 626px){
+    .infosLot{
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        width: 150px;
+    }
+
+    .infosLot h3{
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 654px){
+    .lot{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .infoEmpreendi{
+        min-height: 900px!important;
+    }
+
+    .nossosClientesCont{
+        padding: 20px 20px;
+    }
+
+    .nossosClientesCard{
+        width: 300px!important;
+        font-size: 1rem!important;
+    }
+}
+
+@media (max-width: 518px){
+    .iconEmpresa .iconEmpresaDell:nth-child(1){
+        display: none!important;
+    }
+
+    .iconEmpresa .iconEmpresaDell:nth-child(4){
+        display: none!important;
+    }
+}
+
+@media (max-width: 464px){
+
+    .nossosClientesCard{
+        width: 100%!important;
+        font-size: 1rem!important;
+        padding: 0px!important;
+    }
+
+}
+
+/*---------------------------------------------------------------------------------*/
+
+@media (max-width: 1170px){
+    .cardsServicos{
+        flex-wrap: wrap;
+    }
+
+    .servicos{
+        min-height: 900px;
+    }
+
+    .cardsServic{
+       
+    }
+}
+
+@media (max-width: 824px){
+    
+    .cardsServicos{
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .contatos{
+        padding: 20px 20px;
+    }
+    .textoServicos p{
+        width: 100%;
+    }
+    .aberta, .pergunta{
+        width: calc(100% - 70px);
+    }
+
+    .faq{
+        padding: 20px 20px;
+    }
+}
+
+@media (max-width: 904px){
+    .formContato{
+        flex-direction: column;
+    }
+
+    .formDi{
+        width: calc(100% - 30px);
+    }
+
+    .contacts{
+        width: calc(100% - 90px);
+    }
+}
+
+
+@media (max-width: 450px){
+    footer ul{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    footer ul li{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    footer ul li a{
+        text-align: center;
+    }
+}
